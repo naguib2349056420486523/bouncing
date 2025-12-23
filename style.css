@@ -1,0 +1,105 @@
+:root {
+    --color-1: #2b2d42;       
+    --color-2: #edf2f4;     
+    --color-3: #8d99ae;      
+    --color-4: #ef233c;   
+    --color-5: #d90429;   
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+}
+
+h1 { 
+   text-align: center;
+   margin: 10px 0;
+   font-size: 1.5em;
+   color: var(--color-4);
+}
+
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: rgba(0,0,0,0.2); 
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.inputGroup {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+input {
+   width: 80px;
+   height: 25px;
+   text-align: center;
+   border-radius: 5px;
+   border: none;
+   background-color: var(--color-2);
+   font-weight: bold;
+   color: var(--color-1);
+}
+
+
+
+button {
+   padding: 5px 15px;
+   height: 30px;
+   font-weight: bold;
+   border-radius: 5px;
+   border: none; 
+   background-color: var(--color-4);
+   color: white;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+
+
+button:hover {
+   background-color: var(--color-5);
+}
+
+
+
+
+.canvasContainer {
+   display:flex;
+   justify-content: center;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   position: relative;
+}
+
+
+canvas { 
+   background-color: var(--color-3);
+   border-radius: 4px;
+   cursor: crosshair;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.8em;
+    pointer-events: none;
+}
